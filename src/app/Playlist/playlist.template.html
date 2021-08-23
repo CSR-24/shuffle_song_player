@@ -2,6 +2,6 @@
   <div><span>Title: {{currentSong.title}}</span></div>
   <div class="display">Video Over here</div>
   <div>
-    <button (click)="playPauseHandler($event)">Play</button>
+    <button (click)="playPauseHandler($event)">{{playStatus ? 'Pause': 'Play'}}</button>
   </div>
 </div>
