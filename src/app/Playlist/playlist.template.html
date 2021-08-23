@@ -1,7 +1,11 @@
 <div class="playlist-container">
   <div><span>Title: {{currentSong.title}}</span></div>
-  <div class="display">Video Over here</div>
+  <div class="display">
+    <img width="100%" height="100%" [src]="currentSong.path" />
+  </div>
   <div>
-    <button (click)="playPauseHandler($event)">{{playStatus ? 'Pause': 'Play'}}</button>
+    <button (click)="playPauseHandler($event)">
+      {{playStatus ? 'Pause': 'Play'}}
+    </button>
   </div>
 </div>
